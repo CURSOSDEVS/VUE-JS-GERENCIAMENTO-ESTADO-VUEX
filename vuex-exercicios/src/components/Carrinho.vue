@@ -28,7 +28,7 @@
 <script>
 export default {
     computed: {
-        total() {
+        total(){
             return this.$store.getters.valorTotal
         },
         produtos(){
