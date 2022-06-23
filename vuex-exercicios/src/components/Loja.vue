@@ -11,7 +11,8 @@
 </template>
 
 <script>
-import { mapMutations } from 'vuex'
+// import { mapMutations } from 'vuex'
+import { mapActions } from 'vuex'
 
 export default {
     data() {
@@ -22,7 +23,8 @@ export default {
         }
     },
     methods: {
-        ...mapMutations(['adicionarProduto']),
+        // ...mapMutations(['adicionarProduto']),
+           ...mapActions(['adicionarProduto']),
         adicionar() {
             this.sequencia = this.$store.state.produtos.length
             this.sequencia++
