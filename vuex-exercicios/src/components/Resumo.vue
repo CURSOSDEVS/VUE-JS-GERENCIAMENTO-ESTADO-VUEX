@@ -19,7 +19,7 @@ export default {
     // }
     // 
     // computed: mapGetters(['valorTotal'])
-    computed: mapGetters ({
+    computed: mapGetters ('carrinho',{
         total: 'valorTotal'
     })
 }

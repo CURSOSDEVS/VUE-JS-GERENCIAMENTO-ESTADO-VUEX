@@ -30,7 +30,7 @@ export default {
     },
     methods: {
         // ...mapMutations(['adicionarProduto']),
-           ...mapActions(['adicionarProduto']),
+           ...mapActions('carrinho',['adicionarProduto']),
         adicionar() {
             this.sequencia = this.$store.state.carrinho.produtos.length
             this.sequencia++
